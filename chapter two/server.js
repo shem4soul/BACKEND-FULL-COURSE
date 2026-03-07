@@ -5,6 +5,9 @@ const app = express();
 
 const PORT = 8383;
 
+// Middleware
+app.use(express.json());
+
 app.get("/", (req, res) => {
   console.log("Yay i hit an endpoint", req.method);
   res.sendStatus(201);
