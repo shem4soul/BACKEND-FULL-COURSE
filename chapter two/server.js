@@ -5,6 +5,8 @@ const app = express();
 
 const PORT = 8383;
 
+let data = ["james"];
+
 // Middleware
 app.use(express.json());
 
